@@ -1,9 +1,6 @@
-# Framework Selenium Spring
+# Framework Selenium Gradle
 
-https://www.concrete.com.br/2018/08/24/cucumber-truques-e-dicas/
-
-
-Framework Selenium para automação de testes (Maven + Java + Spring + JUnit + Cucumber)
+Framework Selenium para automação de testes (Gradle + Java + Spring + JUnit + Cucumber)
 
 Para executar os testes basta rodar as classes dentro do diretório \src\test\java\br.com.automacao.runners, essa classe irá executar os testes escritos em BDD nos arquivos de Features contidos no diretório src\test\resources\features.
 
@@ -15,7 +12,7 @@ Ao final do teste será gerado um relatório contendo os prints da imagem de cad
 
 - Java JDK (De preferência versão mais atualizada).
 - Variáveis de ambiente JAVA_HOME e PATH configuradas.
-- Maven (Para gerenciar dependências).
+- Gradle (Para gerenciar dependências).
 - Alguma IDE (Eclipse, IntelliJ, etc) que facilite nos testes.
 
 ## Estrutura do projeto:
@@ -25,7 +22,7 @@ Ao final do teste será gerado um relatório contendo os prints da imagem de cad
 	>>>- **core:** Classes base do projeto para configurações de driver e dos cenários.
 	>>>- **pages:** Cada tela deve possuir a classe com métodos únicos.
 	>>>- **servicos:** Classes com métodos que interagem com os serviços **Rest**.
-  >>>- **repositorios:** Classes com métodos que interagem com a **Base de Dados**.
+  	>>>- **repositorios:** Classes com métodos que interagem com a **Base de Dados**.
 	>>>- **steps:**  Classes com métodos que implementam o que está no arquivo de feature.
 	>>>- **tests:** Classes que iniciam os cenários no arquivo de feature.
 	>>>- **utils:** Classes reutilizáveis como conversão de datas ou textos.
